@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Object Oriented Methods Lab</title>
+  <meta name="description" content="Introduction to JavaScript Object Oriented Methods Lab in the Learn.co curriculum">
+  <meta name="author" content="Flatiron School">
+  <link rel="stylesheet" href="./main.css">
 
-  <head><!-- where all the meta data will go, like and files we need to include -->
-    <title>My Little Rainbow</title><!-- the title is what appears on your tab -->
-  </head>
+</head>
+<body>
+  <div id="red"></div>
+  <div id="orange"></div>
+  <div id="yellow"></div>
+  <div id="green"></div>
+  <div id="blue"></div>
+  <div id="indigo"></div>
+  <div id="violet"></div>
 
-  <body><!-- the body element is where everything we will see on the page will go -->
+  <!-- Include Mocha and set it up for BDD-style testing. -->
+  <script src="node_modules/mocha/mocha.js"></script>
+  <script>mocha.setup('bdd');</script>
 
-    <!-- our soon to be beautiful rainbow! -->
-    <div> <!-- the grandest grandparent div -->
-      <div>
-        <div>
-          <div>
-            <div>
-              <div>
-                <div></div> <!-- the grandest child div -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Include Chai as the matcher library. -->
+  <script src="node_modules/chai/chai.js"></script>
 
-  </body>
+  <script src="node_modules/sinon/pkg/sinon.js"></script>
 
+  <!-- Include the student's JavaScript file. -->
+  <script src="index.js"></script>
+
+  <!-- Include the JavaScript file containing the tests. -->
+  <script src="test/indexTest.js"></script>
+
+  <!-- Include Flatiron School's test runner to push results to Learn. -->
+  <script src="node_modules/learn-browser/learnBrowser.min.js"></script>
+</body>
 </html>
